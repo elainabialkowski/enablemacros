@@ -26,7 +26,7 @@ func setup(t *testing.T) string {
 	for i := 0; i < 10000; i++ {
 		f := excelize.NewFile()
 
-		err = f.SaveAs(path.Join(dirPath, fmt.Sprintf("test_file_%d.xlsx", i)))
+		err = f.SaveAs(path.Join(dirPath, fmt.Sprintf("test_file_%d.xls", i)))
 		if err != nil {
 			t.Fatalf("Could not setup test directory: %s\n", err.Error())
 		}

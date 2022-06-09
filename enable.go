@@ -14,7 +14,7 @@ import (
 
 func EnableExcelMacros(root string) error {
 	dir := os.DirFS(root)
-	files, err := fs.Glob(dir, "*.xlsx")
+	files, err := fs.Glob(dir, "*.xls")
 	if err != nil {
 		return err
 	}
