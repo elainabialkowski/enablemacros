@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	macros.EnableExcelMacros(os.Args[0])
+	macros.EnableExcelMacros(os.Args[1])
 }
